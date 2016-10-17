@@ -1,0 +1,23 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "charlespackage",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuang93/MySite.git"
+  },
+  "author": "chuang93",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuang93/MySite/issues"
+  },
+  "homepage": "https://github.com/chuang93/MySite#readme"
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 BarGraph</title>
+
+       <!--  <script type="text/javascript" src="
+https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script> -->
+
+ <script type="text/javascript" src="d3/d3.min.js"></script>
+
+    <style>
+        div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;
+    margin-right: 2px;   /* We'll override this later */
+    background-color: teal;
+
+
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+      var dataset = []; 
+                             //Initialize empty array
+for (var i = 0; i < 25; i++) {           //Loop 25 times
+    var newNumber = Math.floor(1+ Math.random() * 30);  //New randomm integer (1-31)
+    dataset.push(newNumber);    }
+
+        d3.select("body").selectAll("div")
+    .data(dataset)
+    .enter()
+    .append("div")
+    .attr("class", "bar")
+    .style("height",function(d){
+        var barHeight = d * 5;  //Scale up by factor of 5
+    return barHeight + "px";//d inherently converted to string
+    });
+        </script>
+
+    </body>
+</html>     
+
+
+
